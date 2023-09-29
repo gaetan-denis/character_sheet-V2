@@ -1,0 +1,193 @@
+/*
+SCSS variable
+*/
+$colorbackground: #24292B;
+$colorDiv: lighten(#24292B, 10%);
+$colorBorder: #E0DAA8;
+$colorFont: #BFBFBF;
+/*
+Tag Selector
+*/
+
+h1{
+    font-size: 2rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+h2{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    color: $colorFont;
+    font-size: 14px;
+    margin : 10px;
+}
+
+body {
+    background-color: $colorbackground;
+}
+
+img{
+    border : 1px solid $colorBorder;
+    border-radius:6px;
+    height: 200px;
+    width: 100px;
+    grid-column: 1;
+    grid-row:2;
+}
+
+p {
+    font-size:1rem;
+    padding :1rem;
+}
+
+/*
+Class Selector
+*/
+
+.grit-container{
+    display:grid;
+    grid-template-columns: 100px 1fr;
+    grid-gap:10px;
+    margin: 0 auto;
+    width: 350px;
+}
+
+.header{
+    border : 1px solid $colorBorder;
+    background-color: $colorDiv;
+    border-radius:6px;
+    grid-column: span 2 ;
+    grid-row: 1;
+}
+
+.informations-container{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-column: 2;
+    grid-gap: 10px;
+    grid-row:2;
+    ul{
+        padding-left: 1rem;
+    }
+    .main-informations{
+        border : 1px solid $colorBorder;
+        border-radius:6px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: $colorDiv;
+        grid-row:1/ span 2;
+    }
+    .experience{
+        border : 1px solid $colorBorder;
+        border-radius:6px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: $colorDiv;
+        grid-row: 3/ span 3;
+    }
+}
+
+.traits-aversions-container{
+
+    display:grid;
+    grid-column: span 2;
+    grid-row: span 3;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+    .traits{
+        border : 1px solid $colorBorder;
+        border-radius:6px;
+        padding: 1rem;
+        background-color: $colorDiv;
+        grid-column: 1;
+    }
+    .aversions{
+        border : 1px solid $colorBorder;
+        border-radius:6px;
+        padding: 1rem;
+        background-color: $colorDiv;
+        grid-column: 2;
+    }
+}
+
+.peculiarities{
+    border : 1px solid $colorBorder;
+    border-radius:6px;
+    background-color: $colorDiv;
+    grid-column: span 2;
+   grid-row: 6;
+}
+.possessions{
+    border : 1px solid $colorBorder;
+    border-radius:6px;
+    background-color: $colorDiv;
+    grid-column: span 2;
+    grid-row: 7;
+}
+.contacts{
+    border : 1px solid $colorBorder;
+    border-radius:6px;
+    background-color: $colorDiv;
+    grid-column: span 2;
+    grid-row: 8;
+}
+
+.diary{
+    border : 1px solid $colorBorder;
+    border-radius:6px;
+    background-color: $colorDiv;
+    grid-column: span 2;
+    grid-row: 9;
+}
+
+/*
+Tablet media query
+*/
+
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 18px;
+    }
+
+    .grit-container{
+        grid-template-columns: 150px 1fr;
+        margin: 0 auto;
+        width: 600px;
+    }
+    img{
+        height: 300px;
+        width: 150px;
+    }
+}
+
+/*
+Desktop media query
+*/
+
+@media screen and (min-width: 1024px) {
+
+
+    html {
+        font-size: 20px;
+    }
+
+    .grit-container{
+        grid-template-columns: 200px 1fr;
+        margin: 0 auto;
+        width: 600px;
+    }
+    img{
+        height: 400px;
+        width: 200px;
+    }
+
+
+
+}
