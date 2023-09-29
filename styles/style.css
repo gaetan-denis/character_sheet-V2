@@ -49,7 +49,6 @@ Class Selector
   grid-template-columns: 100px 1fr;
   grid-gap: 10px;
   margin: 0 auto;
-  width: 350px;
 }
 
 .header {
