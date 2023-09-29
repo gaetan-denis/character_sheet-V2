@@ -5,12 +5,14 @@ SCSS variable
 Tag Selector
 */
 h1 {
+  padding: 0.5rem 0;
   font-size: 2rem;
   text-transform: capitalize;
   text-align: center;
 }
 
 h2 {
+  padding: 1rem 0;
   font-size: 1.5rem;
   text-transform: capitalize;
   text-align: center;
@@ -66,15 +68,18 @@ Class Selector
   grid-gap: 10px;
   grid-row: 2;
 }
+.informations-container h2 {
+  padding: 0.225rem 0;
+}
 .informations-container ul {
-  padding-left: 1rem;
+  padding-left: 0.5rem;
 }
 .informations-container .main-informations {
   border: 1px solid #E0DAA8;
   border-radius: 6px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   background-color: #3b4347;
   grid-row: 1/span 2;
 }
@@ -95,18 +100,19 @@ Class Selector
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
 }
+.traits-aversions-container ul {
+  padding: 0.5rem;
+}
 .traits-aversions-container .traits {
+  background-color: #3b4347;
   border: 1px solid #E0DAA8;
   border-radius: 6px;
-  padding: 1rem;
-  background-color: #3b4347;
   grid-column: 1;
 }
 .traits-aversions-container .aversions {
+  background-color: #3b4347;
   border: 1px solid #E0DAA8;
   border-radius: 6px;
-  padding: 1rem;
-  background-color: #3b4347;
   grid-column: 2;
 }
 
@@ -119,25 +125,25 @@ Class Selector
 }
 
 .possessions {
+  background-color: #3b4347;
   border: 1px solid #E0DAA8;
   border-radius: 6px;
-  background-color: #3b4347;
   grid-column: span 2;
   grid-row: 7;
 }
 
 .contacts {
+  background-color: #3b4347;
   border: 1px solid #E0DAA8;
   border-radius: 6px;
-  background-color: #3b4347;
   grid-column: span 2;
   grid-row: 8;
 }
 
 .diary {
+  background-color: #3b4347;
   border: 1px solid #E0DAA8;
   border-radius: 6px;
-  background-color: #3b4347;
   grid-column: span 2;
   grid-row: 9;
 }

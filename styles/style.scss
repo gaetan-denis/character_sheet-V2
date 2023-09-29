@@ -10,12 +10,14 @@ Tag Selector
 */
 
 h1{
+    padding:  0.5rem 0;
     font-size: 2rem;
     text-transform: capitalize;
     text-align: center;
 }
 
 h2{
+    padding: 1rem 0;
     font-size: 1.5rem;
     text-transform: capitalize;
     text-align: center;
@@ -54,7 +56,6 @@ Class Selector
     grid-template-columns: 100px 1fr;
     grid-gap:10px;
     margin: 0 auto;
-    //width: 350px;
 }
 
 .header{
@@ -71,15 +72,18 @@ Class Selector
     grid-column: 2;
     grid-gap: 10px;
     grid-row:2;
+    h2{
+        padding:0.225rem 0;
+    }
     ul{
-        padding-left: 1rem;
+        padding-left: 0.5rem;
     }
     .main-informations{
         border : 1px solid $colorBorder;
         border-radius:6px;
         display:flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around ;
         background-color: $colorDiv;
         grid-row:1/ span 2;
     }
@@ -101,18 +105,19 @@ Class Selector
     grid-row: span 3;
     grid-template-columns: repeat(2,1fr);
     grid-gap: 10px;
+    ul{
+        padding:0.5rem;
+    }
     .traits{
+        background-color: $colorDiv;
         border : 1px solid $colorBorder;
         border-radius:6px;
-        padding: 1rem;
-        background-color: $colorDiv;
         grid-column: 1;
     }
     .aversions{
+        background-color: $colorDiv;
         border : 1px solid $colorBorder;
         border-radius:6px;
-        padding: 1rem;
-        background-color: $colorDiv;
         grid-column: 2;
     }
 }
@@ -122,27 +127,27 @@ Class Selector
     border-radius:6px;
     background-color: $colorDiv;
     grid-column: span 2;
-   grid-row: 6;
+    grid-row: 6;
 }
 .possessions{
+    background-color: $colorDiv;
     border : 1px solid $colorBorder;
     border-radius:6px;
-    background-color: $colorDiv;
     grid-column: span 2;
     grid-row: 7;
 }
 .contacts{
+    background-color: $colorDiv;
     border : 1px solid $colorBorder;
     border-radius:6px;
-    background-color: $colorDiv;
     grid-column: span 2;
     grid-row: 8;
 }
 
 .diary{
+    background-color: $colorDiv;
     border : 1px solid $colorBorder;
     border-radius:6px;
-    background-color: $colorDiv;
     grid-column: span 2;
     grid-row: 9;
 }
