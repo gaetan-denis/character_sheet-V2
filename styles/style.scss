@@ -1,7 +1,7 @@
 /*
 SCSS variable
 */
-$colorbackground: #24292B;
+$colorBackground: #24292B;
 $colorDiv: lighten(#24292B, 10%);
 $colorBorder: #E0DAA8;
 $colorFont: #BFBFBF;
@@ -17,6 +17,8 @@ h1{
 }
 
 h2{
+    text-shadow : 3px 3px 3px black;
+    filter : drop-shadow(3px 3px 3px black);
     padding: 1rem 0;
     font-size: 1.5rem;
     text-transform: capitalize;
@@ -30,7 +32,7 @@ html{
 }
 
 body {
-    background-color: $colorbackground;
+    background-color: $colorBackground;
 }
 
 img{
@@ -59,6 +61,8 @@ Class Selector
 }
 
 .header{
+    text-shadow : 3px 3px 3px black;
+    filter : drop-shadow(3px 3px 3px black);
     border : 1px solid $colorBorder;
     background-color: $colorDiv;
     border-radius:6px;

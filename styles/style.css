@@ -12,6 +12,8 @@ h1 {
 }
 
 h2 {
+  text-shadow: 3px 3px 3px black;
+  filter: drop-shadow(3px 3px 3px black);
   padding: 1rem 0;
   font-size: 1.5rem;
   text-transform: capitalize;
@@ -54,6 +56,8 @@ Class Selector
 }
 
 .header {
+  text-shadow: 3px 3px 3px black;
+  filter: drop-shadow(3px 3px 3px black);
   border: 1px solid #E0DAA8;
   background-color: #3b4347;
   border-radius: 6px;
